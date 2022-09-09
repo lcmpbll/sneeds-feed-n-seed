@@ -8,7 +8,8 @@ class InventoryControl extends React.Component {
     super(props)
     this.state = {
       formVisibleOnPage : false,
-      selectedFeed: null
+      selectedFeed: null,
+      mainInventoryList : []
     }
     this.handleShowForm = this.handleShowForm.bind(this);
   }
