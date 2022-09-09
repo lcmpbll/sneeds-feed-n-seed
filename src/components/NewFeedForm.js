@@ -1,7 +1,7 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
-
+import ReusableForm from './ReusableForm';
 
 function NewFeedForm(props) {
   function handleNewFeedFormSubmission(event){
@@ -10,10 +10,10 @@ function NewFeedForm(props) {
       name: event.target.name.value,
       quantity: parseInt(event.target.quantity.value),
       pounds: parseInt(event.target.quantity.value) * 130,
-      price: parseInt(event.target.value),
+      price: parseInt(event.target.price.value),
       id: v4(),
     });
-    console.log('you created' + event.target.name.value);
+    
   }
   
   return(
