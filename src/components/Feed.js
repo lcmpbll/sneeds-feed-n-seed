@@ -20,6 +20,7 @@ Feed.propTypes = {
   totalPounds: PropTypes.number.isRequired,
   bagPounds: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
+  poundsSold: PropTypes.number,
   id: PropTypes.string,
   whenFeedClicked: PropTypes.func
   
