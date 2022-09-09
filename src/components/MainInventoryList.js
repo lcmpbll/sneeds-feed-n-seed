@@ -10,7 +10,8 @@ function MainInventoryList(props){
           <Feed
             name={feeds.name}
             quantity = {feeds.quantity}
-            pounds = {feeds.pounds}
+            totalPounds = {feeds.totalPounds}
+            bagPounds = {feeds.bagPounds}
             price = {feeds.price}
             whenFeedClicked = { props.onFeedSelection }
             id={feeds.id}

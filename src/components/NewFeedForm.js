@@ -9,7 +9,8 @@ function NewFeedForm(props) {
     props.onNewFeedCreation({
       name: event.target.name.value,
       quantity: parseInt(event.target.quantity.value),
-      pounds: parseInt(event.target.quantity.value) * 130,
+      totalPounds: parseInt(event.target.quantity.value) * 130,
+      bagPounds: 130,
       price: parseInt(event.target.price.value),
       id: v4(),
     });
