@@ -1,6 +1,7 @@
 import React from 'react';
 import MainInventoryList from './MainInventoryList'
 import FeedDetail from './FeedDetail';
+import NewFeedForm from './NewFeedForm';
 
 class InventoryControl extends React.Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class InventoryControl extends React.Component {
   }
   
   render() {
-    let currentlyVisibleState = fails;
+    let currentlyVisibleState = false;
     let buttonText = null;
     
     if(this.state.selectedFeed != null){
@@ -51,7 +52,19 @@ class InventoryControl extends React.Component {
     } else {
       currentlyVisibleState = <MainInventoryList mainInventoryList={this.state.mainInventoryList} onFeedSelection={this.handleChangingSelectedFeed} />
       buttonText = "Add Feed";
-    }
+    } 
+    return (
+      <React.Fragment>
+        {currentlyVisibleState}
+        <button 
+          type="button"
+          onClick={this.handleShowForm}
+          className='btn btn-warning' 
+        >
+          {buttonText}
+        </button>
+      </React.Fragment>
+    )
   }
   
 }
