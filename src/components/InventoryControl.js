@@ -18,13 +18,14 @@ class InventoryControl extends React.Component {
     if(this.state.selectedFeed === null) { 
       this.setState((prevState) => ({
       formVisibleOnPage: !prevState.formVisibleOnPage,
-    
-      }));
+    }));
+  
     } else {
       this.setState({
         formVisibleOnPage: false,
-        selectedGame: null,
+        selectedFeed: null,
       });
+     
     }
   }
   
@@ -34,8 +35,9 @@ class InventoryControl extends React.Component {
   }
   
   handleChangingSelectedFeed = (id) => {
-    const selectedFeed = this.state.mainInventotyList.filter(feed => feed.id === id)[0];
+    const selectedFeed = this.state.mainInventoryList.filter(feed => feed.id === id)[0];
     this.setState({selectedFeed: selectedFeed});
+   
   }
   
   render() {

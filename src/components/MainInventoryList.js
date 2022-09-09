@@ -5,15 +5,16 @@ import PropTypes from 'prop-types';
 function MainInventoryList(props){
   return (
     <React.Fragment>
-      {props.inventory.map((feeds, index) => (
-        <div className='card'>
+      {props.mainInventoryList.map((feeds, index) => (
+        <div className='card' key={index}>
           <Feed
             name={feeds.name}
             quantity = {feeds.quantity}
             pounds = {feeds.pounds}
             price = {feeds.price}
             whenFeedClicked = { props.onFeedSelection }
-            key= {index}
+            id={feeds.id}
+            key={feeds.id}
           />
         </div>
       ))}
@@ -22,7 +23,7 @@ function MainInventoryList(props){
 }
 
 MainInventoryList.propTypes = {
-  inventoryList: PropTypes.array,
+  mainInventoryList: PropTypes.array,
   onGameSelection: PropTypes.func
 };
 
