@@ -1,5 +1,5 @@
 import React from 'react';
-import Feed from './feed';
+import Feed from './Feed';
 import PropTypes from 'prop-types';
 
 function MainInventoryList(props){
