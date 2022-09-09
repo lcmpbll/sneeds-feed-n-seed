@@ -11,7 +11,7 @@
 * Babel
 * Es-Linter
 
-![image](../sfsdiagram.png)
+![image](./sfsdiagram.png)
 
 ## Description
 _This is a simple inventory tracker that can be used to track any weighted inventory. It is specailly designed to track inventories that may be broken up for a partial purchase. A user can enter the weight, name, price per pound, and total quantity of bags that they have for sale and then keep track of the amount left over after each sale._ 
