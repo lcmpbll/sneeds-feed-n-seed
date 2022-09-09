@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Sneed's Feed and Seed
+## By Liam Campbell
+## A react Inventory tracker.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Technologies Used
 
-## Available Scripts
+* Node
+* CSS
+* React
+* Bootstrap
+* Babel
+* Es-Linter
 
-In the project directory, you can run:
+![image](../sfsdiagram.png)
 
-### `npm start`
+## Description
+_This is a simple inventory tracker that can be used to track any weighted inventory. It is specailly designed to track inventories that may be broken up for a partial purchase. A user can enter the weight, name, price per pound, and total quantity of bags that they have for sale and then keep track of the amount left over after each sale._ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup/Installation Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Clone this repository from https://github.com/lcmpbll/SneedsFeedNSeed.git to your desktop
+* Navigate to the top level of the directory
+* In your terminal console `$cd to sneeds-feed-n-seed`
+* `$npm install`
+* `$npm run start`
 
-### `npm test`
+## Known Bugs
+_Currently lbs of remaining inventory in the bag does not calculate exactly_
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
+[Copyright](LICENSE) (c) _09/09/2022 Liam Campbell_
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Contact infromation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+_Feel free to reach out via [github](https://github.com/lcmpbll)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
