@@ -5,8 +5,8 @@ import React from 'react';
 function Header() {
   const headerBackwardStyles = {
     display: 'inline-block',
-    mozTransform: 'scale(-1, 1)',
-    webkitTransform: 'scale(-1, 1)',
+    MozTransform: 'scale(-1, 1)',
+    WebkitTransform: 'scale(-1, 1)',
     transform: 'scale(-1, 1)'
   }
   return(
