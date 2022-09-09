@@ -15,8 +15,8 @@ function FeedDetail(props) {
   ]
 }
 
-FeedDetail.propTypes {
-  feed: PropTypes.object
-}
+FeedDetail.propTypes = {
+  feed: PropTypes.object,
+};
 
 export default FeedDetail;
