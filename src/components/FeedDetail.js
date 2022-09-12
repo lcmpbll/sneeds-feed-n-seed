@@ -10,6 +10,7 @@ function FeedDetail(props) {
       <h2>Total bags: {feed.quantity}</h2>
       <h4>Current bag remaining: {feed.bagPounds}</h4>
       <h4>Price per lb: {feed.price}</h4>
+      <p>Feed type: {feed.feedType}</p>
      
       <hr />
     </React.Fragment>

@@ -9,6 +9,7 @@ function Feed(props){
         <h3>Number of bags available: {props.quantity}</h3>
         <h4>Current bag weight: {props.bagPounds}</h4>
         <h4>Price per lb: {props.price}</h4>
+        <p>Feed Type: {props.feedType}</p>
       </div>
     </React.Fragment>
   )
@@ -20,6 +21,7 @@ Feed.propTypes = {
   totalPounds: PropTypes.number.isRequired,
   bagPounds: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
+  feedType: PropTypes.string.isRequired,
   id: PropTypes.string,
   whenFeedClicked: PropTypes.func
   

@@ -1,5 +1,6 @@
 import React from 'react';
 import Feed from './Feed';
+// import FeedTypeForm from './FeedTypeSelector';
 import PropTypes from 'prop-types';
 
 function MainInventoryList(props){
@@ -13,9 +14,10 @@ function MainInventoryList(props){
             totalPounds = {feeds.totalPounds}
             bagPounds = {feeds.bagPounds}
             price = {feeds.price}
+            feedType= {feeds.feedType}
             whenFeedClicked = { props.onFeedSelection }
             id={feeds.id}
-            // key={feeds.id}
+            
           />
         </div>
       ))}
@@ -25,7 +27,7 @@ function MainInventoryList(props){
 
 MainInventoryList.propTypes = {
   mainInventoryList: PropTypes.array,
-  onGameSelection: PropTypes.func
+  onFeedeSelection: PropTypes.func
 };
 
 export default MainInventoryList;

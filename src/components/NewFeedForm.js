@@ -12,8 +12,10 @@ function NewFeedForm(props) {
       totalPounds: parseInt(event.target.quantity.value) * 130,
       bagPounds: 130,
       price: parseInt(event.target.price.value),
+      feedType: event.target.feedType.value,
       id: v4(),
     });
+  
     
   }
   
