@@ -33,5 +33,5 @@ _Currently lbs of remaining inventory in the bag does not calculate exactly_
 
 ### Contact infromation
 
-_Feel free to reach out via [github](https://github.com/lcmpbll)
+_Feel free to reach out via [github](https://github.com/lcmpbll)_
 
