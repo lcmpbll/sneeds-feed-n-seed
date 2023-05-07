@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './scenes/header/Header';
-import InventoryControl from './components/InventoryControl';
-import ContactInfo from './scenes/footer/Footer'
+import InventoryControl from './scenes/inventory/InventoryControl';
+import Footer from './scenes/footer/Footer'
+import './App.css';
 
 function App() {
   
@@ -31,14 +32,14 @@ function App() {
   }
   
   return (
-      <div style={pageStyles}>
+      <div className='app'>
+        <div className='sneeds__header'>
           <Header />
-
-        
+        </div>
           <InventoryControl />
         
        
-          <ContactInfo />
+          <Footer/>
     
       </div>
   
