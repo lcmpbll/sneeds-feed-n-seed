@@ -8,10 +8,13 @@ import './InventoryControl.css';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 
-const Sidebar = ({handleShowForm}) => {
+const Sidebar = ({handleShowForm, goHome}) => {
   return (
-    <div className='sneeds__sidebar'>
-      <p onClick={() => handleShowForm()}>Add New Inventory</p>
+    <div className='sneeds__sidebar section__padding'>
+      <div className='sneeds__sidebar-content'>
+        <p onClick={() => handleShowForm()}>Add New Inventory</p>
+        <p onClick={() => goHome()}>Home</p>
+      </div>
     </div>
   )
 }
@@ -23,7 +26,11 @@ const InventoryControl = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   
   
-  
+  const clearSettings = () => {
+    setSelectedFeed(null);
+    setFormVisibleOnPage(false);
+    setSelling(false);
+  }
   const handleShowForm = () => {
     if(selectedFeed === null) { 
       setFormVisibleOnPage(true);
@@ -46,6 +53,8 @@ const InventoryControl = () => {
   const handleSoldFeedInList = (feedToSell) => {
     const updatedMainInventoryList = mainInventoryList.filter(feed => feed.id !== selectedFeed.id).concat(feedToSell);
     setMainInventoryList(updatedMainInventoryList);
+    setSelling(false);
+    setSelectedFeed(null);
   }
   
   const handleChangingSelectedFeed = (id) => {
@@ -82,7 +91,7 @@ const InventoryControl = () => {
         }
         {toggleMenu && (
           <div className='sneeds__inventory-sidebar_content'>
-            <Sidebar handleShowForm={handleShowForm}/>
+            <Sidebar handleShowForm={handleShowForm} goHome={clearSettings}/>
           </div>
         
         )}

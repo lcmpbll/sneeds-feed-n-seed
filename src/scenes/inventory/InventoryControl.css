@@ -1,0 +1,37 @@
+.sneeds__inventory {
+  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.sneeds__inventory-sidebar {
+  flex: .75;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+}
+
+.sneeds__inventory-forms {
+  display: none;
+}
+
+.sneeds__inventory-sidebar_container {
+  
+}
+
+.sneeds__sidebar p {
+  cursor: pointer;
+  margin: 0.5rem;
+  
+}
+
+.sneeds__inventory-mainInventory {
+  flex: 3;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
