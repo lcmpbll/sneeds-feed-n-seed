@@ -1,0 +1,33 @@
+.sneeds__feed {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+  width: 100%;
+  align-items: center;
+}
+
+.sneeds__feed-card {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: flex-start;
+  
+}
+
+.sneeds__feed-card_name {
+  display: flex;
+  align-items: center;
+}
+
+.sneeds__feed-card_details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem;
+  
+}
+
+.sneeds__feed-card_details p {
+  margin: .5rem;
+}
