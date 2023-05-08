@@ -76,3 +76,9 @@
   grid-template-columns: repeat(2, 0.5fr);
   grid-gap: 1rem;
 }
+
+.icon {
+  margin: 0.25rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}

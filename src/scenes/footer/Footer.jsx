@@ -16,12 +16,12 @@ function ContactInfo() {
           </div>
           <div className='sneeds__footer-content_contact'>
             <div className='sneeds__footer-content_contact-header'>
-              <AiOutlineWechat/>
+              <AiOutlineWechat className='icon'/>
               <h3>Contact us:</h3>
             </div>
             <div className='sneeds__footer-content_contact-address'>
               <div>
-                <MdWarehouse/>
+                <MdWarehouse />
                 <h4>Address:</h4>
               </div>
               <p>13333 County Rd. 3
@@ -34,7 +34,7 @@ function ContactInfo() {
           </div>
           <div className='sneeds__footer-content_services'>
             <div className='sneeds__footer-content_services-header'>
-              <SiHelpdesk/>
+              <SiHelpdesk className='icon'/>
               <h3>Services</h3>
             </div>
             <div>
@@ -48,7 +48,7 @@ function ContactInfo() {
           </div>
           <div className='sneeds__footer-content_services'>
             <div className='sneeds__footer-content_services-header'>
-              <BsPatchQuestion/>
+              <BsPatchQuestion className='icon'/>
               <h3>Learn More</h3>
             </div>
             <div>
