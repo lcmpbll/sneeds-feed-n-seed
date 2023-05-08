@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function FeedDetail(props) {
   const { feed, onClickingSell} = props;
-  console.log(props);
+
   return (
     <div  className='sneeds__feed' key={feed.id}>
       <div className='sneeds__feed-card'>
