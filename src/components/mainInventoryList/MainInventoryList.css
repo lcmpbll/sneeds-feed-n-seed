@@ -1,0 +1,10 @@
+.sneeds__inventory-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sneeds__inventory-feed {
+  display: flex;
+  flex-direction: column;
+}
